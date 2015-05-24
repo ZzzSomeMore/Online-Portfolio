@@ -1,0 +1,135 @@
+@Charset "UTF-8";
+
+html, body {
+    background-color: #66AAEE;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.headspacing {
+    background-color: #3C93EB;
+    border-bottom: 1px solid #0065CA;
+    border-top: 1px solid #0065CA;
+    color: #A7CBF0;
+    float: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 18px;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 8px;
+    margin: 0px;
+    padding-top: 8px;
+}
+
+#stencyl {
+    background: url(http://media.indiedb.com/images/groups/1/14/13496/stencyl.png);
+    background-size: contain;
+    border-radius: 25px;
+    width: 200px;
+    height: 90px;
+}
+
+#unity {
+    background: url(http://download.unity3d.com/webplayer/images/unity-icon-big.jpg);
+    background-size: contain;
+    border-radius: 25px;
+    width: 150px;
+    height: 95px;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+ 
+.container.open-sidebar {
+    left: 240px;
+}
+ 
+#sidebar {
+    border-right: 1px solid #0065CA;
+    position: absolute;
+    left: -240px;
+    background: #3C93EB;
+    width: 240px;
+    height: 100%;
+    box-sizing: border-box;
+}
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#sidebar ul li {
+    margin: 0;
+}
+#sidebar ul li a {
+    padding: 15px 20px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #0065CA;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+}
+#sidebar ul li:hover a {
+    background: #1A84ED;
+}
+.main-content {
+    width: 100%;
+    height: 200%;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: absolute;
+}
+.main-content .content{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 90px;
+}
+.main-content .content h1{
+    color: #FFFFFF;
+    font-weight: 100;
+}
+.main-content .content p{
+    color: #FFFFFF;
+    width: 30%;
+    line-height: 160%;
+}
+.main-content #sidebar-toggle {
+    background: #3C93EB;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    padding: 10px 7px;
+    float: left;
+}
+.main-content #sidebar-toggle .bar{
+    display: block;
+    width: 18px;
+    margin-bottom: 3px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;   
+}
+.main-content #sidebar-toggle .bar:last-child{
+     margin-bottom: 0;   
+}
